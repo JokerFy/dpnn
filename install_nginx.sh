@@ -44,3 +44,6 @@ cd /usr/local/src/nginx-1.15.7
 make && make install
 mkdir -p /var/tmp/nginx/client
 
+useradd nginx
+chown -R nginx:nginx /etc/nginx/
+
