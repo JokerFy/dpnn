@@ -9,3 +9,7 @@ yum -y install php72-php-fpm php72-php-gd php72-php-json php72-php-mbstring php7
 echo " alias php='/opt/remi/php72/root/usr/bin/php' " >> ~/.bashrc;
 echo " alias php-fpm='/opt/remi/php72/root/usr/sbin/php-fpm' " >> ~/.bashrc;
 source ~/.bashrc;
+cp /etc/opt/remi/php72/php.ini /etc/php.ini
+cd /etc/opt/remi/php72;
+sed -i 's@;pid = run/php-fpm.pid@pid = /var/opt/remi/php72/run/php-fpm/php-fpm.pid@' php-fpm.conf;
+

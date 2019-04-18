@@ -1,0 +1,13 @@
+[Unit]
+Description=The PHP FastCGI Process Manager
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/remi/php72/root/usr/sbin/php-fpm
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+
+

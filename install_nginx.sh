@@ -46,5 +46,5 @@ mkdir -p /var/tmp/nginx/client
 
 useradd nginx
 chown -R nginx:nginx /etc/nginx/
-/usr/sbin/nginx
+
 
