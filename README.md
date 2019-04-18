@@ -1,6 +1,6 @@
 执行步骤：
 
-1.cd /software
+1.cd 项目
 
 2.bash ./install.sh
 
