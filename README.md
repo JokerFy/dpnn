@@ -2,7 +2,7 @@
 
 1.cd 项目
 
-2.bash ./install.sh
+2.bash ./install.sh(新版本centos中可能会出现install_nginx.sh找不到的情况,这种情况手动执行bash ./install_nginx.sh)
 
 3.等待执行完毕后，执行 source ~/.bashrc;
 
