@@ -16,6 +16,5 @@
  systemctl start php-fpm;  
  systemctl enable php-fpm
  
+ 6.可以选择将目录中的nginx/nginx.conf和conf.d复制到/etc/nginx中，方便新项目的配置
  
-
-
