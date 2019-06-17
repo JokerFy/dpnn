@@ -18,3 +18,19 @@
  
  6.可以选择将目录中的nginx/nginx.conf和conf.d复制到/etc/nginx中，方便新项目的配置
  
+ 7.php版本 - 升降级;
+ 
+//首先，禁用当前 PHP72 源
+ yum-config-manager --disable remi-php72   
+ 
+ //然后，启用需升级 PHP70 源
+ yum-config-manager --enable remi-php70   
+ 
+ //最后，升级更新
+ yum update -y 
+ 
+ yum remove php72-* -y
+ 
+ yum autoremove -y
+ 
+ yum -y install php php-fpm php-gd php-json php-mbstring php-mysqlnd php-xml php-xmlrpc php-opcache php-redis;
